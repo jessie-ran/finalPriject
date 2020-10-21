@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sec">
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/tishi1"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.303" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/tishi2"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <EditText
+            android:id="@+id/passWord1"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/tishi3"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/passWord2"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/tishi4"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passWord1"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <Button
+            android:id="@+id/sign"
+            android:layout_width="309dp"
+            android:layout_height="55dp"
+            android:background="@drawable/shape"
+            android:text="@string/tishi5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passWord2"
+            app:layout_constraintVertical_bias="0.511" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupId"
+            android:layout_width="183dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/sign"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passWord2"
+            tools:ignore="MissingConstraints">
+
+
+            <RadioButton
+                android:id="@+id/femaleButtonId"
+                android:layout_width="74dp"
+                android:layout_height="44dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:text="男"
+                tools:layout_editor_absoluteX="205dp"
+                tools:layout_editor_absoluteY="503dp" />
+
+            <RadioButton
+                android:id="@+id/maleButtonId"
+                android:layout_width="72dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:text="女"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="502dp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
